@@ -12,10 +12,6 @@ def init_db():
         name="Pedro"
 
     )
-    persona = Persona(
-        name = "Edwin",
-        age=20
-    )
+
     db.session.add(admin)
-    db.session.add(persona)
     db.session.commit()
